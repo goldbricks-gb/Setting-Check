@@ -1,29 +1,28 @@
-# HTML 表單範本（含簽名欄、PDF 儲存）
+# Slot 檢查表 GitHub Pages 專案
 
-這是從原始 HTML 表單轉換而來的靜態網站版本，支援以下功能：
+這是一個可線上預覽的機台設定值檢查表網站。
 
-- ✅ 可勾選的檢查表欄位
-- ✅ 備註欄位
-- ✅ 手寫簽名區（<canvas>）
-- ✅ 可下載成 PDF 的按鈕
+## 功能說明
 
-## 如何使用
+- 可選擇機台並載入各自設定表
+- 移除簽名與 PDF 下載功能
+- 支援 GitHub Pages 部署
 
-1. 上傳此專案至 GitHub。
-2. 前往 GitHub 專案設定，啟用 GitHub Pages：
-   - Source：`main` branch
-   - Folder：`/root`
-3. 開啟網址 `https://你的帳號.github.io/專案名稱` 即可預覽
-
-## 檔案結構
+## 結構
 
 ```
-static-form-template-github/
-├─ index.html               ← 主畫面（新版簽名功能頁）
-├─ Jumbo Slot.htm          ← 子頁面，舊範本參考
-├─ assets/                  ← Jumbo Slot 對應資源
-│  ├─ sheet001.htm
+setting-check-full/
+├─ index.html              ← 首頁（無簽名版）
+├─ assets/
+│  ├─ b_boy.htm            ← B Boy 表單
+│  ├─ sheet001.htm         ← Jumbo Slot 表單
 │  ├─ stylesheet.css
 │  ├─ tabstrip.htm
-│  └─ ...
+│  └─ filelist.xml
 ```
+
+## 部署方式
+
+1. 將所有檔案上傳至 GitHub Repository
+2. 開啟 GitHub Pages（Branch: `main`，Folder: `/root`）
+3. 開啟網址 `https://你的帳號.github.io/專案名稱/` 預覽頁面
